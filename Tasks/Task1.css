@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+#header{
+    background-color: rgb(29, 18, 39);
+    height: 200px;
+    color: white;
+    text-align: center;
+}
+
+#in-head{
+    padding-top: 60px;
+}
+
+h1{
+    text-transform: uppercase;
+    line-height: 50px;
+}
+h5{
+    font-style: italic;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.537);
+}
+
+#main{
+    text-align: center;
+    margin: 20px 100px;
+}
+
+#about{
+    height: 150px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.671);
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+#about p{
+    font-weight: 100;
+}
+
+#education{
+    padding-top: 20px;
+    background-color: skyblue;
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+.div{
+    height: 40px;
+    width: 60%;
+    background-color: white;
+    margin: 10px 200px;
+    padding-top: 10px;
+}
+
+#skills{
+    padding-top: 20px;
+    background-color: lemonchiffon;
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+#project{
+    padding-top: 20px;
+    background-color: lavender;
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+#contact{
+    padding-top: 20px;
+    background-color: rgb(186, 224, 186);
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+#footer{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    padding: 30px;
+}
