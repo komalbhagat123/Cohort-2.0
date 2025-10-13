@@ -1,0 +1,35 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body {
+height: 100%;
+width: 100%;
+perspective: 200px;
+}
+
+#box{
+    height: 50%;
+    width: 50%;
+    background-color: black;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    transition: all ease 0.5s;
+/* 
+    transform: translate(45%,45%);
+    transform: scale(0.5); */
+    /* transform: rotateX(95deg); */
+
+}
+
+#box1:hover{
+    transform: scale(1.5);
+    transform: rotate(360deg);
+    border-radius: 50%;
+    
+}
