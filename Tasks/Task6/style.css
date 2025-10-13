@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Halvatika;
+    src: url(HelveticaNowDisplay-Regular.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Halvatika;
+}
+
+html,body {
+height: 100%;
+width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 300px;
+    width: 350px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.card #right{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right,transparent ,rgba(0, 0, 0, 0.484),black);
+    position: absolute;
+    right: -50%;
+    top: 0;
+    transition: all ease 0.5s;
+    text-align: center;
+    color: wheat;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card #right h2{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.card #right i{
+    font-size: 25px;
+}
+
+.card:hover #right{
+    right: 0;
+}
