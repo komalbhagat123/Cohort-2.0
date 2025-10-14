@@ -1,0 +1,52 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body {
+height: 100%;
+width: 100%;
+}
+
+h1{
+    background: linear-gradient( to left,red,blue);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    font-size: 180px;
+    color: transparent;
+    text-align: center;
+    background-clip: text;
+    -webkit-text-stroke: 5px black;
+}
+
+#cover{
+    height: 300px;
+    width: 100%;
+    background-color: cadetblue;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+}
+
+.cards{
+    height: 100%;
+    width: 300px;
+    background-color: black;
+    flex-shrink:0;
+    border-radius: 25px;
+    
+}
+
+#cover::-webkit-scrollbar{
+    display: none;
+}
+
+.cards:nth-child(2n){
+    background-color: blueviolet;
+}
+
+.cards:nth-child(3n){
+    background-color: darkgoldenrod;
+}
