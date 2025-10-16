@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr 100px;
+
+    grid-template-areas: "header header"
+                         "aside section"
+                         "footer footer";
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+aside{
+    background-color: red;
+    grid-area: aside;
+}
+
+section{
+    background-color: burlywood;
+    grid-area: section;
+}
+
+footer{
+    background-color:violet;
+    grid-area: footer;
+}
