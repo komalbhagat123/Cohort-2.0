@@ -1,0 +1,25 @@
+@import "button";
+@import "heading";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.blue{
+    @include btn-style(blue,white);
+}
+.red{
+    @include btn-style(red,black);
+}
+
+h1{
+    @include head-style(rgb(227, 74, 58));
+}
