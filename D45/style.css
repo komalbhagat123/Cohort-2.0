@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+h1 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+button:active {
+    scale: 0.95;
+}
