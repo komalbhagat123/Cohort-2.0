@@ -136,8 +136,17 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .love{
     color: red;
+}
+
+.like{
+    width: 50px;
+}
+
+.like h4, .like h6{
+    pointer-events: none;
 }

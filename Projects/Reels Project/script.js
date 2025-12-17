@@ -111,27 +111,30 @@ const reels = [
     }
 ];
 
-var sum = '';
-reels.forEach(function (elem) {
-    sum = sum + `<div class="reel">
+let allReels = document.querySelector('.all-reels');
+
+function addData() {
+    var sum = '';
+    reels.forEach(function (elem, idx) {
+        sum = sum + `<div class="reel">
                     <video autoplay loop muted src="${elem.video}"></video>
                     <div class="bottom">
                         <div class="user">
                             <img src="${elem.userProfile}"
                                 alt="">
                             <h3>${elem.username}</h3>
-                            <button>${elem.isFollowed?"Unfollow":"Follow"}</button>
+                            <button>${elem.isFollowed ? "Unfollow" : "Follow"}</button>
 
                         </div>
                         <h3>${elem.caption}</h3>
                     </div>
                     <div class="right">
-                        <div class="like">
-                            <h4 class="like-icon icon">${elem.isLiked?`<i class="love ri-heart-fill"></i>`:`<i class="ri-heart-line"></i></h4>`}
+                        <div class="like" id="${idx}">
+                            <h4 class="like-icon icon">${elem.isLiked ? `<i class="love ri-heart-fill"></i>` : `<i class="ri-heart-line"></i></h4>`}
                             <h6>${elem.likeCount}</h6>
                         </div>
-                        <div class="comment-icon icon">
-                            <h4 class="comment"><i class="ri-chat-1-line"></i></h4>
+                        <div class="comment">
+                            <h4 class="comment-icon icon"><i class="ri-chat-1-line"></i></h4>
                             <h6>${elem.commentCount}</h6>
                         </div>
                         <div class="share">
@@ -147,11 +150,12 @@ reels.forEach(function (elem) {
 
 
 
+    })
+    allReels.innerHTML = sum;
+}
+
+addData();
+
+allReels.addEventListener('click',function(dets){
+    console.log(reels[dets.target.id]);
 })
-
-let allReels = document.querySelector('.all-reels')
-
-console.log(allReels);
-
-allReels.innerHTML = sum;
-
