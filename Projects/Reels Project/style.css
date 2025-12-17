@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, rgb(17, 17, 17), rgb(25, 25, 25), rgb(7, 7, 7));
+    padding: 10px;
+    color: white;
+    overflow: auto;
+}
+
+section {
+    height: 100%;
+    width: 350px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+}
+
+.all-reels {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.all-reels::-webkit-scrollbar{
+    display: none;
+}
+
+.reel {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.reel video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.reel .bottom {
+    width: 350px;
+    padding: 30px 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0 0 10px 10px ;
+
+}
+.bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    
+}
+.bottom .user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom .user h3{
+    font-size: 14px;
+
+}
+
+.bottom h3{
+    font-size: 20px;
+}
+.bottom .user button{
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+}
+
+.bottom .user button:active{
+    scale: 0.95;
+}
+
+.right{
+    width: 30px;
+    padding: 20px;
+    position: absolute;
+    bottom: 11%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.right .icon{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.right h4{
+    cursor: pointer;
+}
+
+.right h6{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.right>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.love{
+    color: red;
+}
