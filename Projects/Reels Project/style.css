@@ -34,10 +34,10 @@ section {
     overflow: auto;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    
+
 }
 
-.all-reels::-webkit-scrollbar{
+.all-reels::-webkit-scrollbar {
     display: none;
 }
 
@@ -66,17 +66,19 @@ section {
     position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0);
-    border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 10px 10px;
 
 }
-.bottom .user{
+
+.bottom .user {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 10px;
-    
+
 }
-.bottom .user img{
+
+.bottom .user img {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -84,15 +86,16 @@ section {
     object-position: center;
 }
 
-.bottom .user h3{
+.bottom .user h3 {
     font-size: 14px;
 
 }
 
-.bottom h3{
+.bottom h3 {
     font-size: 20px;
 }
-.bottom .user button{
+
+.bottom .user button {
     font-size: 10px;
     padding: 5px 10px;
     border-radius: 10px;
@@ -101,11 +104,11 @@ section {
     color: white;
 }
 
-.bottom .user button:active{
+.bottom .user button:active {
     scale: 0.95;
 }
 
-.right{
+.right {
     width: 30px;
     padding: 20px;
     position: absolute;
@@ -117,21 +120,21 @@ section {
     gap: 25px;
 }
 
-.right .icon{
+.right .icon {
     font-size: 25px;
     font-weight: 500;
 }
 
-.right h4{
+.right h4 {
     cursor: pointer;
 }
 
-.right h6{
+.right h6 {
     font-size: 14px;
     font-weight: 500;
 }
 
-.right>div{
+.right>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,14 +142,39 @@ section {
     cursor: pointer;
 }
 
-.love{
+.love {
     color: red;
 }
 
-.like{
+.like {
     width: 50px;
 }
 
-.like h4, .like h6{
+.like h4,
+.like h6 {
+    pointer-events: none;
+}
+
+.mute {
+    background-color: #333;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mute:active{
+    scale: 0.95;
+}
+
+.mute i{
+    font-size: 20px;
+    font-weight: 100;
     pointer-events: none;
 }
