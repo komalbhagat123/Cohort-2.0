@@ -45,12 +45,23 @@ body {
     gap: 10px;
     color: whitesmoke;
     border-radius: 20px;
-    /* box-shadow: 0 0 50px rgb(176, 0, 0); */
-    background: linear-gradient(black) padding-box, conic-gradient(from var(--rotate), black,black, rgb(176, 0, 0), black,black) border-box;
-    border: 5px solid rgba(245, 245, 245, 0);
-    animation: borderAnimate 6s infinite forwards;
-
+    box-shadow: 0 0 0px rgb(176, 0, 0);
+    text-shadow: 0 0 0px rgb(176, 0, 0);
+    background: linear-gradient(black) padding-box, conic-gradient(from var(--rotate), black, rgb(176, 0, 0), black) border-box;
+    border: 0px solid rgba(245, 245, 245, 0);
+    animation: borderAnimate 3s infinite forwards linear;
+    animation-play-state: paused;
+    transition: all 0.3s linear ;
 }
+
+.box:hover{
+    animation-play-state: running;
+    border-width: 7px;
+    box-shadow: 0 0 40px rgb(176, 0, 0);
+    color: rgb(176, 0, 0);
+    text-shadow: 0 0 20px rgb(176, 0, 0);
+}
+
 
 .box img {
     width: 100%;
